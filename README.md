@@ -1,2 +1,10 @@
 # spotify-hit-prediction
-The final project will be a group project(up to 5 students) where students will turn in a tutorial that will walk users through the entire data science process: Business Understanding>Data Understanding> Data Preparation>Modeling+Evaluating (EDA+MachineLearningModelTraining)>Deployment.
+# Predicting Spotify Song Popularity
+
+**Course:** DS 201 – Fall 2025  
+**Team:**  
+- Katie Neuffer  
+- Kate SantaMaria  
+- Abby Sobol  
+- Thomas Snyder  
+- Kevin Duffy  
