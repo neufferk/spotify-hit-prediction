@@ -45,34 +45,26 @@ Kaggle dataset: Spotify Tracks Popularity
 
 ## Methods
 
-We follow the **full data science process**:
+We followed the data science process:
 
-1. **Business Understanding**
-   - Define stakeholder (record label)
-   - Clarify the main question and success metrics
+1. Business Understanding
+   - Define stakeholder - The Perspective Musician
+   - State the main question and success metrics
 
-2. **Data Understanding**
-   - Load the dataset in Python (pandas)
-   - Explore structure: shape, column types, missingness
+2. Data Understanding
+   - Load the dataset in Python
    - Basic descriptive statistics
-   - Distributions of popularity and key audio features
+   - Distributions of popularity and important features
 
-3. **Data Preparation**
-   - Handle missing values (drop or impute)
-   - Drop ID/text columns that do not help prediction (track name, artist, etc.)
-   - Create a **binary target variable**:  
-     - `hit = 1` if popularity ≥ threshold (e.g., 60),  
+3. Data Preparation
+   - Drop missing values (Data set had already dropped missing vals)
+   - Create a binary target variable:  
+     - `hit = 1` if popularity ≥ 60,  
      - `hit = 0` otherwise
-   - Standardize numeric features for certain models (e.g., logistic regression)
-   - Train/test split
+     - Histograms of popularity and major audio features
+     - Correlation matrix heatmap for numeric features
 
-4. **Exploratory Data Analysis (EDA)**
-   - Histograms of popularity and major audio features
-   - Scatter plots (e.g., danceability vs popularity, energy vs popularity)
-   - Correlation matrix heatmap for numeric features
-   - Group comparisons for “hit” vs “non-hit” tracks
-
-5. **Modeling & Evaluation**
+5. Modeling & Evaluation
    - **Baseline model:** Logistic Regression
    - **More flexible model:** Random Forest Classifier
    - Metrics:
@@ -81,7 +73,7 @@ We follow the **full data science process**:
      - Confusion matrix
    - Feature importance analysis (from Random Forest)
 
-6. **Communication & Recommendations**
+6. Communication & Recommendations
    - Summarize key drivers of popularity
    - Translate findings into plain-English guidance for the record label:
      - What ranges of danceability/energy/tempo are most promising?
@@ -105,17 +97,5 @@ We follow the **full data science process**:
 **Practical takeaway for the label:**  
 > Focus promotional efforts on tracks that are moderately fast, **danceable**, and **energetic**, with lower instrumentalness and a clear rhythmic pulse.
 
----
-
-## Repository Structure
-
-```text
-.
-├── README.md                # Project overview (this file)
-├── spotify_popularity.ipynb # Main analysis notebook (Colab-friendly)
-├── data/                    # (Optional) local data storage if needed
-├── img/
-│   ├── popularity_hist.png
-│   ├── corr_heatmap.png
-│   └── feature_importance.png
-└── docs/                    # For GitHub Pages, if used
+how to add charts
+![Correlation Heatmap](img/corr_heatmap.png)
