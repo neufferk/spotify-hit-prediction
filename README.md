@@ -1,8 +1,8 @@
 # spotify-hit-prediction
 # Predicting Spotify Song Popularity
 
-**Course:** DS 201 – Fall 2025  
-**Team:**  
+DS 201 – Fall 2025  
+ 
 - Katie Neuffer  
 - Kate SantaMaria  
 - Abby Sobol  
@@ -12,48 +12,34 @@
 
 ## Project Overview
 
-This project explores the question: **What makes a Spotify track popular?**
+Project Question: What makes a Spotify track popular?
 
-Using a public Kaggle dataset of Spotify tracks and their audio features, we build a full data science pipeline in Python to:
+Using a public Kaggle dataset of Spotify song, we have created a project to
 
-1. Understand which sound characteristics (e.g., danceability, energy, tempo) are associated with higher popularity.
-2. Train machine learning models to classify tracks as **“hit”** vs **“not hit”** using those audio features.
-3. Translate our results into clear recommendations for a **music marketing team / record label**.
+- Understand which parts of a song result in it being popular, for example, energy, tempo, danceability.
+- Train machine learning models to classify tracks as hit or not a hit using the features identified from the first part.
+- Make a reccommendation for an artist of what aspects they should include in their song to ensure they make a hit.
 
-Our goal is to help a hypothetical label decide **what kind of sound profile is more likely to succeed** on Spotify.
+Our goal is to help an artist decide what kind of song characteristics are more likely to succeed on Spotify.
 
 ---
 
 ## Business Question
 
-> **For a record label choosing which songs to promote, can we use audio features to predict whether a Spotify track will become popular, and what are the most important sound features of a "hit"?**
+Can we use sound features to predict whether a Spotify track will become popular?
 
-**Stakeholder:**  
-A record label’s marketing and A&R (Artist & Repertoire) team.
-
-**Key Decisions:**
-
-- Which style of tracks to prioritize for promotion.
-- What sonic features (danceability, energy, tempo, etc.) are most worth focusing on in production.
-- How to describe “hit potential” in a simple, data-driven way.
+What are the most important sound features to make a hit?
 
 ---
 
 ## Data
+ 
+Kaggle dataset: Spotify Tracks Popularity
+  - https://www.kaggle.com/datasets/lynnxxx/spotify-tracks-popularity-classification  
 
-**Source:**  
-- Kaggle dataset: **Spotify Tracks Popularity – Classification**  
-  - URL: https://www.kaggle.com/datasets/lynnxxx/spotify-tracks-popularity-classification  
-
-**Description (high level):**
-
-- Each row = one Spotify track  
-- Includes:
-  - **Target:** popularity score (0–100) and/or popularity label (we use this to create a binary “hit/not hit” target)
-  - **Audio features:** danceability, energy, loudness, speechiness, acousticness, instrumentalness, liveness, valence, tempo, duration, etc.
-  - **Metadata:** track name, artist name, possibly genre and other identifiers
-
-We focus on **numeric audio features** (and a small set of simple categorical fields if available).
+- Each row = one Spotify track (Includes: track name, artist name, possibly genre and other identifiers)
+- popularity score (0–100) (above or equal to 60 is a hit)
+- variables include: danceability, energy, loudness, speechiness, acousticness, instrumentalness, liveness, valence, tempo, duration, etc
 
 ---
 
