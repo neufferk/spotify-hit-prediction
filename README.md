@@ -82,8 +82,9 @@ We followed the data science process:
 ---
 
 ## Key Findings (Summary)
-
+![Correlation Heatmap](confusionlogistic)
 ![Correlation Heatmap](confusionrandomforest)
+![Correlation Heatmap](top15)
 
 - Tracks with **higher danceability and energy** are significantly more likely to be classified as **hits**.
 - **Instrumentalness** tends to be **negatively** associated with popularity; fully instrumental tracks are under-represented among hits.
