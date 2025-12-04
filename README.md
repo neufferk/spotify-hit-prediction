@@ -14,11 +14,11 @@ DS 201 – Fall 2025
 
 Project Question: What makes a Spotify track popular?
 
-Using a public Kaggle dataset of Spotify song, we have created a project to
+Using a public Kaggle dataset of Spotify songs, we have created a project to:
 
-- Understand which parts of a song result in it being popular, for example, energy, tempo, danceability.
-- Train machine learning models to classify tracks as hit or not a hit using the features identified from the first part.
-- Make a reccommendation for an artist of what aspects they should include in their song to ensure they make a hit.
+- Understand which parts of a song result in it being popular, for example, energy, tempo, and danceability; 
+- Train machine learning models to classify tracks as hit or not a hit using the features identified from the first part; 
+- Make a recommendation for an artist on what aspects they should include in their song to ensure they make a hit.
 
 Our goal is to help an artist decide what kind of song characteristics are more likely to succeed on Spotify.
 
