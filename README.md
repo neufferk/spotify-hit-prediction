@@ -14,13 +14,13 @@ DS 201 – Fall 2025
 
 Project Question: What makes a Spotify track popular?
 
-Using a public Kaggle dataset of Spotify songs, we have created a project to:
+Using a public Kaggle dataset of Spotify song, we have created a project to
 
-- Understand which parts of a song result in it being popular, for example, energy, tempo, and danceability; 
-- Train machine learning models to classify tracks as hit or not a hit using the features identified from the first part; 
-- Make a recommendation for an artist on what aspects they should include in their song to ensure they make a hit.
+- Understand which parts of a song result in it being popular, for example, energy, tempo, danceability.
+- Train machine learning models to classify tracks as hit or not a hit using the features identified from the first part.
+- Make a reccommendation for a recording label of what aspects they should include in a song to ensure they make a hit.
 
-Our goal is to help an artist decide what kind of song characteristics are more likely to succeed on Spotify.
+Our goal is to help an recording label decide what kind of song characteristics are more likely to succeed on Spotify.
 
 ---
 
@@ -65,26 +65,25 @@ We followed the data science process:
      - Correlation matrix heatmap for numeric features
 
 5. Modeling & Evaluation
-   - **Baseline model:** Logistic Regression
-   - **More flexible model:** Random Forest Classifier
+   - Baseline Model - Logistic Regression
+   - Other Model - Random Forest Classifier
    - Metrics:
      - Accuracy
-     - Precision, Recall, F1 score
+     - Precision
+     - Recall
+     - F1 score
      - Confusion matrix
-   - Feature importance analysis (from Random Forest)
 
 6. Communication & Recommendations
-   - Summarize key drivers of popularity
-   - Translate findings into plain-English guidance for the record label:
-     - What ranges of danceability/energy/tempo are most promising?
-     - What to avoid (e.g., fully instrumental or very low-energy tracks)
+   - Summarize key traits of popular songs
+   - Take the results and transform into an easily understandable guide to inform recording labels.
    - Discuss limitations & potential next steps
 
 ---
 
 ## Key Findings (Summary)
 
-> *placeholders*
+![Correlation Heatmap](img/corr_heatmap.png)
 
 - Tracks with **higher danceability and energy** are significantly more likely to be classified as **hits**.
 - **Instrumentalness** tends to be **negatively** associated with popularity; fully instrumental tracks are under-represented among hits.
@@ -97,5 +96,4 @@ We followed the data science process:
 **Practical takeaway for the label:**  
 > Focus promotional efforts on tracks that are moderately fast, **danceable**, and **energetic**, with lower instrumentalness and a clear rhythmic pulse.
 
-how to add charts
-![Correlation Heatmap](img/corr_heatmap.png)
+
