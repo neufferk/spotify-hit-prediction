@@ -86,15 +86,15 @@ We followed the data science process:
 ![Correlation Heatmap](confusionrandomforest)
 ![Correlation Heatmap](top15)
 
-- Tracks with **higher danceability and energy** are significantly more likely to be classified as **hits**.
-- **Instrumentalness** tends to be **negatively** associated with popularity; fully instrumental tracks are under-represented among hits.
-- Our best model (Random Forest) achieved around **XX% accuracy** and **YY% F1 score** on the held-out test set.
+- Tracks with fil in are more likely to be classified as hits.
+- fil in tends to be negatively associated with popularity
+- Our best model Random Forest? achieved around fil in% accuracy and fil in% F1 score.
 - Top 3 most important features for predicting hit status:
-  1. Danceability  
-  2. Energy  
-  3. Loudness (or valence / tempo, depending on final model)
+  1. fil in later 
+  2. fil in  
+  3. fil in
 
-**Practical takeaway for the label:**  
-> Focus promotional efforts on tracks that are moderately fast, **danceable**, and **energetic**, with lower instrumentalness and a clear rhythmic pulse.
+**Takeaway for the label:**  
+Focus promotional efforts on tracks that are fil, fil, and fil.
 
 
